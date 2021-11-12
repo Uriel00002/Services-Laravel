@@ -1,0 +1,429 @@
+:root {
+    --primary:#23a896; 
+    --primariooscuro: #1c7e71;
+    --secundary: #ededed;
+    --just-white: rgba(255, 255, 255, 0.856);
+    --fuenteprimaria: 'Arial', Helvetica, sans-serif;
+    --fuentesecundaria: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family:  Arial, Sans-serif;
+    font-size: 16px;
+}
+
+.login {
+    background: linear-gradient(345deg, #dfffb1 0, #c8ffba 7.14%, #b0ffc2 14.29%, #96ffc9 21.43%, #7bffce 28.57%, #60ffd0 35.71%, #43f8cf 42.86%, #24e5cb 50%, #00d2c5 57.14%, #00c2bf 64.29%, #00b4b9 71.43%, #00a8b4 78.57%, #009eb1 85.71%, #0096ae 92.86%, #0a91ad 100%);
+    height: 70px;
+    padding-top: 10px;
+    text-align: right;
+    justify-content: center;
+}
+
+.login .nombre{
+    float: left;
+    padding-left: 15px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+}
+
+.barra{
+    background-color: #2ed3bd;
+}
+
+.btn-1, 
+.btn-2 {
+    float: right;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 1.5rem;
+    color: var(--primary);
+    background-color: whitesmoke;
+    border-radius: 6px;
+    border: 2px solid var(--primary);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.contenedorr {
+    width: 100%;
+    height: 500px;
+    background: url('../img/bg.jpg') #281a0c;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.menu {
+    width: 100%;
+    text-align: center;
+}
+
+ .menu a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    margin: 40px 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+.contenedorr .menu a:hover {
+    text-decoration: underline;
+}
+
+.contenedorr .textos {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+    margin-inline-start: 80px;
+}
+
+.contenedorr .textos .nombre {
+    font-size: 70px;
+    font-weight: 400;    
+}
+
+.contenedorr .textos .nombre span {
+    font-weight: 600;
+}
+
+.contenedorr .textos h3 {
+    font-weight: 300;
+    font-size: 35px;
+    font-style: italic;
+}
+
+
+.main {
+    background: url('../img/bg-textura.png');
+    background-repeat: repeat;    
+}
+
+.main .acerca-de .contenedor {
+    overflow: visible;
+    position: relative;
+}
+.main .acerca-de .foto {
+    width: 80%;
+    position: absolute;
+    left: 0;
+    top: -50px;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}.main .acerca-de .foto img {
+    vertical-align: top;
+    width: 80%;
+}
+.main .acerca-de article {
+    background: #fff;
+    padding: 48px;
+    width: 40%;
+    position: relative;
+    top: -20px;
+    z-index: 1;
+    float: right;
+    box-shadow: 0px 0px 15px rgba(0,0,0,.35);
+}
+.main .acerca-de article h3 {
+    font-size: 45px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+.main .acerca-de article p {
+    line-height: 28px;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+
+
+.main-plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+.plans-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 350px;
+    margin-bottom: 40px;
+}
+
+
+.plans-title p {
+    padding-top: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #757575;
+}
+
+.plans-container--slider {
+    display: flex;
+    height: 480px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    padding: 0 auto; 
+}
+
+.plans-container--card {
+    position: relative;
+    scroll-snap-align: center;
+    width: 30%;
+    min-width: 200px;
+    max-width: 300px;
+    height: 350px;
+    margin: 50px 30px 0;
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89. 73, 30, 0.16);
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.5);
+    border-radius: 10px;
+}
+
+.plan-card--title {
+    font-size: 1.1rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: black;
+}
+
+.plan-card--price {
+    padding-top: -15px;
+    font-size: 3.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--primary);
+}
+
+.plan-card--price span {
+    padding-top: -50px;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.plan-card--saving {
+    font-size: .9rem;
+    color: #757575;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 4px;
+    margin-top: -15px;
+    position: static;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--primary);
+}
+
+
+.scrolls{
+    background-color: rgb(32, 29, 29);
+    padding-bottom: 50px;
+}
+
+.barra_scrolls{
+    background-color: black;
+    width: 100%;
+    height: 70px;
+}
+
+.barra_scrolls p {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.horizontal_slider{
+    background-color: black;
+    display: block;
+    width: 100%;
+    overflow-x: scroll;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.horizontal_slider::-webkit-scrollbar{
+    display: none;
+}
+
+.slider_container{
+    display: block;
+    white-space: nowrap;
+}
+
+.item{
+    display: inline-block;
+    margin-right: 20px;
+}
+.item img{
+    width: 220px;
+    height: 220px;
+    opacity: .7;
+}
+.item:hover img{
+    opacity: 1;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+  
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;
+}
+
+
+.contacto {
+    padding: 30px 0;
+    background-color: whitesmoke;
+}
+
+.contacto .contenedor .titulo {
+    font-size: 34px;
+    line-height: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: var(--primary);
+    text-align: center;
+}
+
+.contacto .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 20px;
+}
+
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"],
+.contacto .formulario textarea {
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+.contacto .formulario input[type="text"]:focus,
+.contacto .formulario input[type="email"]:focus,
+.contacto .formulario textarea:focus {
+    border: 2px solid var(--primary);
+}
+
+.contacto .formulario input[type="text"],
+.contacto .formulario input[type="email"] {
+    width: 45%;
+    margin-bottom: 15px;
+}
+
+.contacto .formulario textarea {
+    width: 80%;
+    height: 10px;
+    min-width: 96.5%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+.contacto .formulario .boton {
+    margin: auto;
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,1.5);
+    -moz-box-shadow:0px 2px 5px 0px rgba(0,0,0,1.5);
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,1.5);
+}
+
+.contacto .formulario .boton:haver {
+    background: var(--primary);
+}
+
+
+.redes-sociales {
+    background-color: var(--primary);
+    padding: 8px;
+    height: 90px;
+}
+.redes-sociales .contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-sociales a {
+    color: #fff;
+    text-align:center;
+    width: 150px;
+    display: block;
+    padding: 15px 0;
+    border-radius: 3px;
+    font-size: 25px;
+    margin: 0 20px;
+}
+
+.redes-sociales .youtube:hover {
+    background: #cd201f;
+}
+
+.redes-sociales .facebook:hover {
+    background: #3b5998;
+}
+
+.redes-sociales .whatsapp:hover {
+    background: #00BB2D;
+}
+
+.redes-sociales .instagram:hover {
+    background: #ff0088;
+}
+
+footer {
+    background:  #000;
+    height: 80px;
+}
+
+footer .copyright
+{
+    padding-top: 5px;
+    text-align: center;
+    padding: 15px 0;
+    color:  #fff;
+    font-size: 18px;
+}
